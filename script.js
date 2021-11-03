@@ -12,6 +12,7 @@ window.addEventListener("load", function() {
         let cargoMass = document.querySelector("input[name=cargoMass]");
 
         let list = document.getElementById("faultyItems");
+        list.style.visibility = "hidden"
 
         inputArray = [pilot, copilot, fuelLevel, cargoMass]; 
 
