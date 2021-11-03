@@ -11,7 +11,7 @@ window.addEventListener("load", function() {
         let fuelLevel = document.querySelector("input[name=fuelLevel]");
         let cargoMass = document.querySelector("input[name=cargoMass]");
 
-        let myList
+        let list = document.getElementById("faultyItems");
 
         inputArray = [pilot, copilot, fuelLevel, cargoMass]; 
 
@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
             alert("Fuel Level and Cargo Mass must be numbers");
             event.preventDefault();
         } else {
-            formSubmission(document, myList, pilot.value, copilot.value, fuelLevel.value, cargoMass.value);
+            formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoMass.value);
             event.preventDefault();
         }
 
