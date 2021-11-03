@@ -1,5 +1,4 @@
-
-//const { validateInput, formSubmission, myFetch, pickPlanet, addDestinationInfo } = require("./scriptHelper");
+//Set visibility to hidden for the warning box
 let list = document.getElementById("faultyItems");
 list.style.visibility = "hidden"
 
@@ -13,8 +12,6 @@ window.addEventListener("load", function() {
         let fuelLevel = document.querySelector("input[name=fuelLevel]");
         let cargoMass = document.querySelector("input[name=cargoMass]");
 
-        //let list = document.getElementById("faultyItems");
-        //list.style.visibility = "hidden"
 
         inputArray = [pilot, copilot, fuelLevel, cargoMass]; 
 
